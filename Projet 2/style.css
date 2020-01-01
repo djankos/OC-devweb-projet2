@@ -1,0 +1,231 @@
+/*general*/
+
+* {
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.main-page {
+    display: flex;
+}
+
+.banner {
+    width: 23%;
+    background-color: #444;
+    color: ivory;
+    font-size: 0.90rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+ul {
+    display: inline;
+}
+
+.cv-core {
+    width: 80%;
+    background-color: #fbfcfa;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*banniere*/
+
+.banner-img {
+    border-radius: 50%;
+    margin: 70px auto 30px auto;
+}
+
+.banner-title:nth-of-type(2) {
+    flex-basis: 70%;
+}
+
+.banner-title h2 {
+    text-align: center;
+    border: 2px solid ivory;
+    margin: 30px 10%;
+    line-height: 2.4rem;
+}
+
+.banner li {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.banner article {
+    line-height: 1.3rem;
+    margin: 1rem 2.4rem;
+    text-align: justify;
+}
+
+.banner-logo {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.2rem 0;
+}
+.banner a:hover {
+    border-left: 3px solid #444;
+}
+
+/*section droite*/
+
+.cv-core {
+    color: #444;
+    padding-left: 2%;
+}
+.core-img {
+    display: none;
+}
+
+/*titre*/
+
+header {
+    background-color: #E0E0E0;
+    height: 13rem;
+    margin-left: -3%;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    padding-top: 25px;
+    font-size: 3rem;
+    letter-spacing: 0.9rem;
+}
+
+hr {
+    width: 15%;
+}
+
+header h3 {
+    text-align: center;
+    margin: -1.3rem auto 0 auto;
+}
+
+/*articles*/
+
+.cv-core h2 {
+    border-bottom: 2px solid #777;
+    width: 95%;
+    padding: 10px 0 15px 0;
+}
+
+.cv-core span {
+    display: inline-block;
+    width: 1.2rem;
+}
+
+.cv-core aside {
+    line-height: 1.2rem;
+    width: 20%;
+}
+
+.cv-core article {
+    width: 55%;
+    padding-left: 25%;
+}
+
+.formation {
+    display: flex;
+    width: 95%;
+    margin: 2rem;
+}
+
+.cv-core h3 {
+    margin-top: -0.02rem;
+    font-weight: bold;
+}
+
+.cv-core h2:hover {
+    border-bottom: 2px solid orangered;
+}
+
+/*pied*/
+
+.recommandation {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.recommandation article {
+    margin: 1.2rem 0 1.2rem 0;
+    padding: 0;
+    width: 35%;
+}
+
+.recommandation a {
+    color: #444;
+}
+
+.recommandation a:hover {
+    border-left: 3px solid #fbfcfa;
+}
+
+/*mediaqueries*/
+
+@media screen and (max-width: 790px) {
+    .main-page {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    .banner {
+        width: 100%;
+        color: #444;
+        background-color: #fbfcfa;
+    }
+    .cv-core {
+        width: 100%;
+    }
+    header {
+        height: 15rem;
+        margin-bottom: 20px;
+    }
+    h1 {
+        letter-spacing: 0.4rem;
+    }
+    .banner-img {
+        display: none;
+    }
+    .core-img {
+        display: block;
+        border-radius: 50%;
+        align-items: center;
+        margin: 10px auto;
+    }
+    .cv-core h2 {
+        border: 2px solid #444;
+        margin: auto;
+        text-align: center;
+        display: block;
+        width: 70%;
+    }
+    .cv-core h2:hover {
+        border: 2px solid #444;
+
+    }
+    .banner h2 {
+        border-color: #444;
+    }
+}
